@@ -1,0 +1,38 @@
+Vibhav Mishra
+18:41 PM
+for (var i = 0; i < 3; i++) {
+    setTimeout(function() {
+        console.log(i);
+    }, 100);
+}
+
+Vibhav Mishra
+18:43 PM
+const arr = [2,3,4,5]
+arr[100] = 6
+console.log(arr.length)
+
+Vibhav Mishra
+18:51 PM
+const obj1 = [{a:1}, {b:2}]
+const replace = {a:0}
+obj1.forEach((ele) => {
+	ele = replace
+	console.log(ele)
+})
+console.log(obj1)
+
+Vibhav Mishra
+18:54 PM
+function greet(name) {
+    this.name = name;
+    console.log(this.name);
+}
+
+const person = { name: 'John' };
+
+greet.call(person, 'Alice');
+
+Vibhav Mishra
+18:58 PM
+You have 5 Zero's(00000) how can you get 120 from these 5 zeros?

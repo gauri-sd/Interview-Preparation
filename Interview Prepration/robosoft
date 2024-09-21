@@ -1,0 +1,199 @@
+[17:08] Likhitha M
+
+const arr = [20, 11, 32, 78];
+
+
+for (var i = 0; i < arr.length; i++) {​​​​​
+
+
+  setTimeout(() => {​​​​​
+
+
+    console.log("index: " + i);
+
+
+  }​​​​​, 3000);
+
+[17:14] Likhitha M
+
+const someFunc = () => {​​​​​
+
+
+  return somePromise()
+
+
+    .then((response) => {​​​​​
+
+
+      return response;
+
+
+    }​​​​​)
+
+
+    .catch((error) => {​​​​​
+
+
+      throw new Error("Something went wrong");
+
+
+    }​​​​​);
+
+
+}​​​​​;
+
+
+[17:18] Likhitha M
+
+function foo1() {​​​​​
+
+
+  return {​​​​​
+
+
+    bar: "hello",
+
+
+  }​​​​​;
+
+
+}​​​​​
+
+[17:18] Likhitha M
+
+function foo2() {​​​​​
+
+
+  return;
+
+
+  {​​​​​
+
+
+    bar: "hello";
+
+
+  }​​​​​
+
+
+}​​​​​
+
+[17:20] Likhitha M
+
+let a = true;
+ 
+setTimeout(() => {​​​​​
+
+
+  a = false;
+
+
+}​​​​​, 2000);
+ 
+while (a) {​​​​​
+
+
+  console.log("hello");
+
+
+}​​​​​
+
+[17:26] Likhitha M
+
+abc();
+ 
+var abc = function () {​​​​​
+
+
+  console.log("Hello");
+
+
+}​​​​​;
+
+[17:29] Likhitha M
+
+foo();
+ 
+function foo() {​​​​​
+
+
+  console.log(a);
+ 
+  var a = 2;
+
+
+}​​​​​
+
+[17:30] Likhitha M
+
+console.log("a");
+
+
+setTimeout(() => console.log("set"), 0);
+
+
+Promise.resolve(() => console.log("pro")).then((res) => res());
+
+
+console.log("b");
+
+[17:32] Likhitha M
+
+console.log(add(5)(2)(4)(8)());
+ 
+function add(a) {​​​​​
+
+
+  return function (b) {​​​​​
+
+
+    if (b) {​​​​​
+
+
+      return add(a + b);
+
+
+    }​​​​​ else {​​​​​
+
+
+      return a;
+
+
+    }​​​​​
+
+
+  }​​​​​;
+
+
+}​​​​​
+
+[17:34] Likhitha M
+
+const p = new Promise((a, b) => {​​​​​
+
+
+  setTimeout(() => {​​​​​
+
+
+    a(2);
+
+
+  }​​​​​, 10);
+
+
+  a(4);
+
+
+}​​​​​);
+
+
+p.then((r) => console.log(r))
+
+
+  .then((p) => console.log(p))
+
+
+  .finally(() => console.log(888))
+
+
+  .then((z) => console.log(z));

@@ -1,0 +1,25 @@
+eminenceinnovation.com
+   o/p:  { e: 3, m: 2, i: 3, n: 5, c: 2, o: 3, v: 1, a: 1, t: 1, '.': 1 }
+
+{
+      "name": "User1",
+      "age": 30,
+      "city": "Hyderabad"
+    }
+    
+    {
+      "name": "User1",
+      "age": 25,
+      "country": "India"
+    }
+
+    o/p: age, city, country
+
+[{userName:"sai",age:11},{userName:"praneeth",age:12}]   
+
+   [{userName:"sai",sal:12000},{userName:"praneeth",sal:30000}]
+
+o/p:  [
+  { userName: 'sai', age: 11, sal: 12000 },
+  { userName: 'praneeth', age: 12, sal: 30000 }
+]

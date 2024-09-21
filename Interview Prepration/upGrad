@@ -1,0 +1,119 @@
+// const numbers = [1,1,2,3,4,1,5,4,1];
+// let result = sum(numbers);
+// console.log(result);
+
+// // let newArr = new Set(numbers);
+// // console.log(newArr);
+
+// function sum(numbers) {
+//     let sum = 0;
+//     for(let i = 0; i < numbers.length; i++) {
+//         sum += numbers[i];
+//     }
+//     return sum;
+// }
+
+
+fetch("coffee.jpg")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.blob();
+  })
+  .then((myBlob) => {
+    let objectURL = URL.createObjectURL(myBlob);
+    let image = document.createElement("img");
+    image.src = objectURL;
+    document.body.appendChild(image);
+  })
+  .catch((e) => {
+    console.log(
+      "There has been a problem with your fetch operation: " + e.message
+    );
+  });
+  
+  async test(myBlob) {
+      try {
+          let response = await fetch("coffee.jpg");
+          let objectURL = await URL.createObjectURL(myBlob);
+    let image = await document.createElement("img");
+    image.src = objectURL;
+    document.body.appendChild(image);
+      } catch(e) => {
+    console.log(
+      "There has been a problem with your fetch operation: " + e.message
+    );
+      
+      
+  }
+  
+  
+  const users = [{id:1,name:"user 1"},{id:2,name:"user 2"}]
+  
+  
+  db.user.updateOne({id: 2}, {$set: {name: "user 5"}})
+  
+
+  const fs = require('fs').promises;
+
+// Function to read a file
+function readFile(filePath) {
+  return fs.readFile(filePath, 'utf8');
+}
+
+// Function to process the content of the file
+function processContent(content) {
+  return new Promise((resolve, reject) => {
+    // Simulating asynchronous processing
+    setTimeout(() => {
+      const processedContent = content.toUpperCase();
+      resolve(processedContent);
+    }, 1000);
+  });
+}
+
+// Function to write the processed content to a new file
+function writeFile(filePath, content) {
+  return fs.writeFile(filePath, content, 'utf8');
+}
+
+// Using promise chaining
+readFile('input.txt')
+  .then(content => {
+    console.log('File read successfully');
+    return processContent(content);
+  })
+  .then(processedContent => {
+    console.log('Content processed successfully');
+    return writeFile('output.txt', processedContent);
+  })
+  .then(() => {
+    console.log('File written successfully');
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+
+async fileOperation () {
+    try {
+        let content = await readFile('input.txt');
+        if(content) {
+            console.log('File read successfully');
+        }
+        console.log('Content processed successfully');
+        let processedContent = await writeFile('output.txt', content);
+        if(processedContent){
+            console.log('File written successfully');
+        }
+        return processedContent;
+    } catch (error) {
+        console.error('Error:', error);
+    }
+    
+    
+    
+    
+}
+
