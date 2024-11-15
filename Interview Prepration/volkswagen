@@ -1,0 +1,31 @@
+Q. What will be the output of the following code snippet?	
+	
+let a= { name : "Hello"}
+
+let b = a;
+
+b.name = "World";
+
+console.log(a.name);
+console.log(b.name);
+
+
+Q. What will the code below output? Explain your answer.
+
+	console.log(0.1 + 0.2);
+	console.log(0.1 + 0.2 == 0.3);
+
+Q. What will be the output of the following code snippet?
+
+	var a = true + true + true * 3;
+	console.log(a);
+    
+
+ Q. Group the given elements in JavaScript?
+   let arr = ["hello","world","java","hello","java"];
+
+    output:{"hello" :2, "java" :2, "world": 1};
+    
+    
+Q. Write a program to remove duplicate from array in JavaScript?
+//Input: [1,2,3,4,1,2,3,4,5]; output: [1,2,3,4,5]

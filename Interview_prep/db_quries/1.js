@@ -5,7 +5,7 @@ const two = `Retrieve the 2nd largest order amount from the "orders" table.`;
 const A2 = `SELECT DISTINCT order_amount AS second_largest_order_amount 
             FROM orders 
             ORDER BY order_amount DESC 
-            LIMIT 1 OFFSET 2 ;`;
+            LIMIT 1 OFFSET 1 ;`;
 
 const three = `Retrieve the 4th largest order amount from the "orders" table.`;
 const A3 = `SELECT DISTINCT order_amount AS fourth_largest_order_amount 

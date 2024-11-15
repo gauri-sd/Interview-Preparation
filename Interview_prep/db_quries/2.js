@@ -41,3 +41,14 @@ const A2 = `db.customers.aggregate([
         }
     }
 ])`
+
+const pipe3 = `Retrive count of each language.`
+
+const A3 = `db.collection.aggregate([
+    {
+      $group: {
+        _id: '$language',
+        count: {$sum: 1}
+      }
+    }
+])`

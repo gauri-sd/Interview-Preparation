@@ -1,0 +1,67 @@
+1. Load Balancers
+
+2. Caching
+    Database caching
+    Content caching (CDNs)
+    In-memory caching (e.g., Redis, Memcached)
+
+3. Databases
+    Relational Databases (SQL)
+    NoSQL Databases
+    Data Sharding
+    Data Replication
+
+4. Content Delivery Networks (CDNs)
+
+5. Message Queues
+    Examples: Kafka, RabbitMQ, Amazon SQS
+
+6. Microservices
+
+7. API Gateway
+
+8. Service Discovery
+    Examples: Consul, etcd, Zookeeper
+
+9. Rate Limiting
+
+10. Logging and Monitoring
+    Examples: Prometheus, Grafana, ELK stack
+
+11. Data Partitioning and Consistency Models
+    Data Sharding
+    Consistency Models (e.g., eventual consistency)
+
+12. Replication and Redundancy
+    Synchronous and asynchronous replication
+
+13. Security Components
+    Authentication & Authorization (e.g., OAuth, JWT)
+    Firewalls and SSL
+    Encryption (e.g., TLS, AES)
+
+14. Application Frameworks and Middleware
+    Examples: Express (Node.js), Spring (Java), Django (Python)
+
+15. Data Storage and Data Lakes
+    Data Warehouses (e.g., Snowflake, Google BigQuery)
+    Data Lakes (e.g., Amazon S3, Azure Data Lake)
+
+16. Throttling
+
+17. Reverse Proxies
+
+18. Containerization and Orchestration
+    Examples: Docker, Kubernetes
+
+19. File Storage
+    Examples: Amazon S3, Google Cloud Storage
+
+20. Distributed File Systems
+    Examples: HDFS, Ceph
+
+21. Configuration Management
+    Examples: Consul, AWS Systems Manager
+
+22. Event Streaming and Processing
+    Examples: Apache Kafka, Amazon Kinesis

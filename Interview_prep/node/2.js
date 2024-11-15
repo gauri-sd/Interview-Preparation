@@ -1,5 +1,5 @@
-const Q_11 = ` What is AWS Lambda? When to Use AWS Lambda, Why Use AWS Lambda: Storage Capacity:`;
-const A_11 = `
+const Q11 = ` What is AWS Lambda? When to Use AWS Lambda, Why Use AWS Lambda: Storage Capacity:`;
+const A11 = `
 
 AWS Lambda is a serverless compute service that runs your code in response to events and automatically
 manages the compute resources for you, so you don't need to provision or manage servers.
@@ -27,3 +27,14 @@ AWS Lambda itself doesn't provide persistent storage directly attached to the fu
   DynamoDB (NoSQL database), etc., to store and retrieve data.
 `;
 
+const Q12 = `What is Amazon EC2, and what are some common use cases?`;
+const A12 = `
+    - Amazon EC2 (Elastic Compute Cloud) is a web service that provides scalable, resizable virtual servers 
+    in the cloud. Users can select instance types, operating systems, storage, and networking to match their 
+    needs.
+    
+    Common Use Cases:
+    - Hosting web and application servers.
+    - Running batch processing and data analysis jobs.
+    - Hosting enterprise applications and databases.
+    - Developing and testing applications.`

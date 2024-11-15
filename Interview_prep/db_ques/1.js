@@ -1,4 +1,4 @@
-const First = `if you your given huge number above 50 lakh of data given to you , 
+const First = `if you given huge number above 50 lakh of data given to you , 
 how would you organize data , and how would you find duplicacy and reduce redunancy `
 
 
@@ -14,32 +14,39 @@ const sol = `
    - Regularly monitor and update indexes to ensure optimal performance.
 
  c. Partitioning:
-   - Partition large tables into smaller chunks based on a partition key (e.g., date, region) to improve manageability and query performance.
+   - Partition large tables into smaller chunks based on a partition key (e.g., date, region) to 
+   improve manageability and query performance.
    - Distribute data across multiple partitions to balance load and optimize storage.
 
  d. Sharding:
-   - Implement sharding to horizontally partition data across multiple databases or servers based on a sharding key.
+   - Implement sharding to horizontally partition data across multiple databases or servers based on a 
+   sharding key.
    - Distribute data evenly across shards to improve scalability and performance.
 
  2. Detecting Duplicacy:
 
  a. Unique Constraints:
-   - Define unique constraints on columns or combinations of columns to prevent duplicate entries at the database level.
+   - Define unique constraints on columns or combinations of columns to prevent duplicate entries at 
+   the database level.
    - Use unique indexes to enforce uniqueness and facilitate efficient duplicate detection.
 
  b. Data Validation:
-   - Implement data validation rules to ensure that only valid and non-duplicate data is entered into the database.
-   - Use front-end validation and backend checks to identify and prevent duplicate entries during data entry.
+   - Implement data validation rules to ensure that only valid and non-duplicate data is entered into 
+   the database.
+   - Use front-end validation and backend checks to identify and prevent duplicate entries during 
+   data entry.
 
  c. Automated Scripts:
-   - Develop automated scripts or jobs to periodically scan the dataset for duplicate records based on predefined criteria.
-   - Utilize database queries or dedicated data quality tools to identify and flag duplicate entries.`
-
+   - Develop automated scripts or jobs to periodically scan the dataset for duplicate records based 
+   on predefined criteria.
+   - Utilize database queries or dedicated data quality tools to identify and flag duplicate entries.
+   `;
 
 
 const second = `partitioning and normalization both do similar work ? then what is diff`
     
-const ans  = `Partitioning and normalization are both data organization techniques, but they serve different purposes:
+const ans  = `Partitioning and normalization are both data organization techniques, but they serve 
+different purposes:
 
 Partitioning:
 
@@ -54,7 +61,6 @@ Normalization:
 - Focus:  Eliminating data redundancy within a relational database by structuring data into tables with
  defined relationships.
 - Goal:  Improve data integrity, reduce storage requirements, and minimize the risk of data inconsistency.
-s
 - Impact on Redundancy:** Directly reduces redundancy by eliminating duplicate data across tables.
 
 
@@ -66,7 +72,8 @@ Partitioning :
 
 Imagine a social media platform: User data can be massive. Partitioning user data by region (US, Europe, Asia) stores
 data in smaller chunks. This allows for:
-    - Faster queries: Retrieving posts for a specific region is quicker because you only search a smaller partition.
+    - Faster queries: Retrieving posts for a specific region is quicker because you only search a 
+    smaller partition.
     - Scalability: As the user base grows, new partitions can be added for new regions.
 
 Normalization:

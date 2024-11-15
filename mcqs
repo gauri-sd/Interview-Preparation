@@ -1,0 +1,1352 @@
+
+BackEnd Developer Quiz 
+Total points
+81/120
+ 
+Email
+*
+gauridurugkar98@gmail.com
+0 of 0 points
+Mobile number
+*
+8484054289
+Backend Quiz
+4 of 5 points
+ 
+1. Which of the following statements about Next.js 14's new app directory is correct?
+
+*
+0/1
+The app directory does not support dynamic routing.
+The app directory replaces the pages directory and supports nested layouts and server components.
+The app directory is used exclusively for static site generation.
+The app directory is only used for API routes.
+ 
+Correct answer
+The app directory replaces the pages directory and supports nested layouts and server components.
+ 
+2. What is the primary benefit of using React Server Components (RSC) in Next.js 14?
+
+*
+1/1
+RSC allows for client-side rendering of components.
+- RSC enables components to be rendered on the server, reducing the amount of JavaScript sent to the client.
+ 
+RSC improves the performance of client-side state management.
+RSC is used to handle static site generation.
+Feedback
+RSC enables components to be rendered on the server, reducing the amount of JavaScript sent to the client.
+ 
+3. Which of the following is true about the new next/image component in Next.js 14?
+*
+1/1
+It only supports local images and does not allow external URLs.
+- It automatically optimizes images for different screen sizes and formats.
+ 
+It requires manual configuration for responsive images.
+It does not support lazy loading.
+Feedback
+It automatically optimizes images for different screen sizes and formats.
+ 
+4. What is the purpose of the getServerSideProps function in Next.js?
+*
+1/1
+To fetch data at build time for static site generation.
+To fetch data on the client side after the initial render.
+- To fetch data on each request for server-side rendering.
+ 
+To handle API requests within a Next.js application.
+Feedback
+To fetch data on each request for server-side rendering.
+ 
+5. Which of the following statements about Next.js 14's middleware is correct?
+*
+1/1
+Middleware can only be used for authentication purposes.
+Middleware runs on the client side to handle routing.
+- Middleware allows you to run code before a request is completed, enabling features like redirects and rewrites.
+ 
+Middleware is deprecated in Next.js 14.
+Feedback
+Middleware allows you to run code before a request is completed, enabling features like redirects and rewrites.
+ExpressJS API
+2 of 5 points
+ 
+1. Which of the following statements about middleware in ExpressJS is correct?
+
+*
+1/1
+- Middleware functions are executed sequentially in the order they are defined.
+ 
+Middleware functions can only handle GET requests.
+Middleware functions must always end with res.send().
+Middleware functions cannot modify the request object.
+Feedback
+Middleware functions are executed sequentially in the order they are defined.
+ 
+2. What is the purpose of the next function in ExpressJS middleware?
+*
+1/1
+To terminate the request-response cycle.
+- To pass control to the next middleware function.
+ 
+To send a response to the client.
+To log the request details.
+Feedback
+To pass control to the next middleware function.
+ 
+3. Which of the following methods is used to handle errors in ExpressJS?
+*
+0/1
+app.use((err, req, res, next) => { ... })
+app.error((err, req, res, next) => { ... })
+ 
+app.catch((err, req, res, next) => { ... })
+app.handle((err, req, res, next) => { ... })
+Correct answer
+app.use((err, req, res, next) => { ... })
+ 
+4. What is the correct way to define a route that handles all HTTP methods in ExpressJS?
+*
+0/1
+app.all('/route', (req, res) => { ... })
+app.use('/route', (req, res) => { ... })
+app.any('/route', (req, res) => { ... })
+app.route('/route').all((req, res) => { ... })
+ 
+Correct answer
+app.all('/route', (req, res) => { ... })
+ 
+5.  Which of the following statements about ExpressJS routing is true?
+*
+0/1
+Route parameters are defined using the req.query object.
+Route parameters are defined using the req.params object.
+Route parameters are defined using the req.body object.
+Route parameters are defined using the req.headers object.
+ 
+Correct answers
+Route parameters are defined using the req.params object.
+Route parameters are defined using the req.body object.
+Webpack and Babel
+2 of 5 points
+ 
+1. Which of the following statements about Webpack's code splitting is correct?
+
+*
+1/1
+Code splitting can only be achieved using dynamic imports.
+- Code splitting is used to split the code into smaller chunks to improve load times.
+ 
+Code splitting requires a third-party plugin to work.
+Code splitting is only useful for CSS files.
+Feedback
+Code splitting is used to split the code into smaller chunks to improve load times.
+ 
+2.  What is the purpose of the webpack-dev-server?
+*
+0/1
+To bundle JavaScript files for production.
+To serve static files from a specified directory.
+ 
+To provide a development server with live reloading and hot module replacement.
+To optimize and minify CSS files.
+Correct answer
+To provide a development server with live reloading and hot module replacement.
+ 
+3.  Which of the following is true about Webpack's tree shaking feature?
+*
+1/1
+Tree shaking removes unused CSS selectors.
+- Tree shaking is a technique to remove dead code from JavaScript bundles.
+ 
+Tree shaking requires manual configuration for each module.
+Tree shaking is only available in Webpack 5 and above.
+Feedback
+Tree shaking is a technique to remove dead code from JavaScript bundles.
+ 
+4. Which of the following statements about Babel's preset-env is correct?
+*
+0/1
+preset-env is used to transpile JSX syntax.
+preset-env allows you to use the latest JavaScript features without needing to micromanage which syntax transforms are needed.
+preset-env is only used for TypeScript transpilation.
+ 
+preset-env does not support polyfills.
+Correct answer
+preset-env allows you to use the latest JavaScript features without needing to micromanage which syntax transforms are needed.
+ 
+5.  What is the purpose of Babel's plugin-transform-runtime?
+*
+0/1
+To transform ES6 modules to CommonJS.
+ 
+To optimize the code by reusing Babel's helper functions.
+To enable hot module replacement in development.
+To minify JavaScript code for production.
+Correct answer
+To optimize the code by reusing Babel's helper functions.
+JavaScript compilation
+4 of 5 points
+ 
+1. Which of the following statements about JavaScript's hoisting mechanism is correct?
+
+*
+1/1
+Only variable declarations are hoisted, not function declarations.
+- Both variable and function declarations are hoisted to the top of their scope.
+ 
+Only function declarations are hoisted, not variable declarations.
+Neither variable nor function declarations are hoisted.
+Feedback
+Both variable and function declarations are hoisted to the top of their scope.
+ 
+2. What will be the output of the following code and why?
+console.log(foo());
+
+var foo = function() {
+
+return "Hello";
+
+};
+
+*
+0/1
+"Hello"
+undefined
+ 
+TypeError
+ReferenceError
+Correct answer
+TypeError
+ 
+3. Which of the following best describes the difference between let and var in terms of scope and hoisting?
+*
+1/1
+let is function-scoped and hoisted, while var is block-scoped and not hoisted.
+- let is block-scoped and not hoisted, while var is function-scoped and hoisted.
+ 
+Both let and var are block-scoped and hoisted.
+Both let and var are function-scoped and not hoisted.
+Feedback
+let is block-scoped and not hoisted, while var is function-scoped and hoisted.
+ 
+4.  What is the output of the following code ?
+function test() {
+
+console.log(a);
+
+console.log(b);
+
+var a = 1;
+
+let b = 2;
+
+}
+
+test();
+
+*
+1/1
+1, 2
+undefined, 2
+- undefined, ReferenceError
+ 
+ReferenceError, 2
+Feedback
+undefined, ReferenceError. The variable a is hoisted and initialized as undefined, while b is in the temporal dead zone until its declaration.
+ 
+5. Which of the following statements about JavaScript's execution context and call stack is correct?
+*
+1/1
+The call stack is used to manage asynchronous operations.
+- Each function call creates a new execution context that is pushed onto the call stack.
+ 
+The global execution context is destroyed after the initial script execution.
+Execution contexts are only created for global code, not for functions.
+Feedback
+Each function call creates a new execution context that is pushed onto the call stack.
+Docker Advanced
+4 of 5 points
+ 
+1.  Which of the following statements about Docker's overlay network is correct?
+*
+0/1
+Overlay networks can only be used with Docker Swarm.
+ 
+Overlay networks require a third-party plugin to function.
+Overlay networks allow containers on different hosts to communicate securely.
+Overlay networks do not support encryption.
+Correct answer
+Overlay networks allow containers on different hosts to communicate securely.
+ 
+2. What is the primary purpose of the docker-compose command?
+*
+1/1
+To build Docker images from a Dockerfile.
+To manage Docker Swarm clusters.
+- To define and run multi-container Docker applications.
+ 
+To monitor Docker container performance.
+Feedback
+To define and run multi-container Docker applications.
+ 
+3. Which of the following is true about Docker's COPY and ADD instructions in a Dockerfile?
+*
+1/1
+- COPY can only copy files from the local filesystem, while ADD can also extract tar files and download files from URLs.
+ 
+ADD can only copy files from the local filesystem, while COPY can also extract tar files and download files from URLs.
+Both COPY and ADD can download files from URLs.
+COPY and ADD are interchangeable and have no functional differences.
+Feedback
+COPY can only copy files from the local filesystem, while ADD can also extract tar files and download files from URLs.
+ 
+4. What is the purpose of the docker swarm init command? 
+*
+1/1
+To initialize a Docker container.
+- To create a new Docker Swarm cluster.
+ 
+To start a Docker service.
+To build a Docker image.
+Feedback
+To create a new Docker Swarm cluster.
+ 
+5. Which of the following statements about Docker volumes is correct? 
+*
+1/1
+- Docker volumes are stored on the host filesystem and can be shared between containers.
+ 
+Docker volumes are ephemeral and are deleted when the container stops.
+Docker volumes can only be used with Docker Compose.
+Docker volumes do not support data persistence.
+Feedback
+Docker volumes are stored on the host filesystem and can be shared between containers.
+TypeScript Advanced
+2 of 5 points
+ 
+1. Which of the following TypeScript features allows you to create a type that is a combination of multiple types?
+*
+0/1
+Union Types
+Intersection Types
+Type Aliases
+Generics
+ 
+Correct answer
+Intersection Types
+ 
+2.  What is the output of the following TypeScript code and why?
+type A = { x: number };
+
+type B = { y: string };
+
+type C = A & B;
+
+const obj: C = { x: 10, y: "hello" };
+
+console.log(obj);
+
+*
+1/1
+- { x: 10, y: "hello" }
+ 
+{ x: 10 }
+{ y: "hello" }
+Error
+Feedback
+{ x: 10, y: "hello" }. The & operator creates an intersection type that combines properties from both A and B.
+ 
+3.  Which of the following statements about TypeScript's never type is correct?
+*
+0/1
+never is used to represent the absence of a value.
+never is used to represent values that never occur.
+never is used to represent null or undefined values.
+ 
+never is used to represent any value.
+Correct answer
+never is used to represent values that never occur.
+ 
+4. What is the purpose of the keyof operator in TypeScript?
+*
+0/1
+To create a union of all property names of a given type.
+To extract the type of a specific property from an object.
+ 
+To enforce strict null checks.
+To define a constant value.
+Correct answer
+To create a union of all property names of a given type.
+ 
+5. Which of the following is true about TypeScript's Mapped Types?
+*
+1/1
+- Mapped types allow you to create new types by transforming properties of an existing type.
+ 
+Mapped types are used to map values from one type to another.
+Mapped types are used to enforce immutability.
+Mapped types are used to handle asynchronous operations.
+Feedback
+Mapped types allow you to create new types by transforming properties of an existing type.
+AWS EC2
+2 of 5 points
+ 
+1. Which of the following is true about Amazon EC2 Spot Instances?
+
+*
+0/1
+Spot Instances are always available and can be launched at any time.
+Spot Instances are charged at a fixed rate, regardless of demand.
+ 
+Spot Instances can be terminated by AWS with a two-minute warning.
+Spot Instances do not support Auto Scaling.
+Correct answer
+Spot Instances can be terminated by AWS with a two-minute warning.
+ 
+2.  What is the primary purpose of an Elastic IP address in AWS EC2?
+*
+0/1
+To provide a static IP address that can be associated with any instance.
+To enable secure communication between instances in different regions.
+ 
+To automatically scale instances based on traffic.
+To store and manage data across multiple instances.
+Correct answer
+To provide a static IP address that can be associated with any instance.
+ 
+3.  Which of the following statements about Amazon EC2 Auto Scaling is correct?
+*
+1/1
+Auto Scaling can only be used with On-Demand Instances.
+- Auto Scaling automatically adjusts the number of instances based on demand.
+ 
+Auto Scaling requires manual intervention to add or remove instances.
+Auto Scaling does not support scaling policies.
+Feedback
+Auto Scaling automatically adjusts the number of instances based on demand.
+ 
+4. What is the function of an Amazon Machine Image (AMI) in EC2?
+*
+0/1
+To provide a template for launching new instances.
+To store and manage user data across instances.
+To monitor and log instance performance.
+ 
+To manage network configurations for instances.
+Correct answer
+To provide a template for launching new instances.
+ 
+5. Which of the following is true about EC2 instance types?
+*
+1/1
+All instance types provide the same amount of memory and CPU resources.
+- Instance types are categorized based on their compute, memory, and storage capabilities.
+ 
+Instance types cannot be changed once an instance is launched.
+All instance types support GPU acceleration.
+Feedback
+Instance types are categorized based on their compute, memory, and storage capabilities.
+Node.js Advanced
+5 of 5 points
+ 
+1. Which of the following is true about the cluster module in Node.js?
+*
+1/1
+- It allows you to create child processes that share the same server port.
+ 
+It is used to manage multiple Node.js versions on a single machine.
+It provides a way to handle file system operations asynchronously.
+It is used to create secure HTTPS servers.
+Feedback
+It allows you to create child processes that share the same server port.
+ 
+2.  What is the purpose of the process.nextTick() method in Node.js?
+*
+1/1
+- To schedule a callback function to be invoked in the next iteration of the event loop.
+ 
+To delay the execution of a function by a specified number of milliseconds.
+To terminate the current process and start a new one.
+To handle errors in asynchronous operations.
+Feedback
+To schedule a callback function to be invoked in the next iteration of the event loop.
+ 
+3. Which of the following statements about the EventEmitter class in Node.js is correct?
+*
+1/1
+It is used to create HTTP servers.
+- It allows you to listen for and emit events.
+ 
+It is a built-in module for handling file uploads.
+It is used to manage environment variables.
+Feedback
+It allows you to listen for and emit events.
+ 
+4.  What is the primary use of the Buffer class in Node.js?
+*
+1/1
+- To handle binary data directly.
+ 
+To manage HTTP requests and responses.
+To create and manage child processes.
+To interact with the file system.
+Feedback
+To handle binary data directly.
+ 
+5. Which of the following is true about the async_hooks module in Node.js?
+*
+1/1
+- It is used to manage asynchronous resources and their lifecycle.
+ 
+It provides utilities for working with streams.
+It is used to create and manage worker threads.
+It allows you to schedule tasks to run at a later time.
+Feedback
+It is used to manage asynchronous resources and their lifecycle.
+MySQL Advanced
+1 of 5 points
+ 
+1. Which of the following statements about MySQL replication is true?
+*
+0/1
+MySQL replication can only be configured in a master-slave setup.
+ 
+MySQL supports both synchronous and asynchronous replication.
+MySQL replication does not support filtering of databases or tables.
+MySQL replication requires the use of GTIDs (Global Transaction Identifiers).
+Correct answer
+MySQL supports both synchronous and asynchronous replication.
+ 
+2. What is the purpose of the EXPLAIN statement in MySQL?
+*
+0/1
+To describe the structure of a table.
+ 
+To provide information about how MySQL executes a query.
+To display the current configuration settings.
+To list all the indexes on a table.
+Correct answer
+To provide information about how MySQL executes a query.
+ 
+3. Which of the following is true about MySQL's InnoDB storage engine?
+*
+1/1
+InnoDB does not support foreign key constraints.
+InnoDB tables are always stored in a single file per table.
+- InnoDB supports ACID-compliant transactions.
+ 
+InnoDB does not support row-level locking.
+Feedback
+InnoDB supports ACID-compliant transactions.
+ 
+4. What does the --skip-networking option do when starting the MySQL server?
+*
+0/1
+It disables all network connections to the MySQL server.
+It allows only local connections to the MySQL server.
+It enables secure connections to the MySQL server.
+It skips the networking configuration during startup.
+ 
+Correct answer
+It disables all network connections to the MySQL server.
+ 
+5. Which of the following statements about MySQL's GROUP BY clause is correct?
+*
+0/1
+GROUP BY can be used without any aggregate functions.
+GROUP BY must always be followed by an ORDER BY clause.
+ 
+GROUP BY can be used to filter rows before aggregation.
+GROUP BY can be used with ROLLUP to produce subtotals and grand totals.
+Correct answer
+GROUP BY can be used with ROLLUP to produce subtotals and grand totals.
+Typescript
+3 of 5 points
+ 
+1. How do you define a variable with a string type in TypeScript?
+*
+1/1
+- let name: string;
+ 
+let name = "string";
+let name: String;
+let name: text;
+ 
+2. Which keyword is used to define an interface in TypeScript?
+*
+1/1
+type
+- interface
+ 
+class
+struct
+ 
+3. How do you extend a class in TypeScript?
+*
+1/1
+- class Child extends Parent
+ 
+class Child inherits Parent
+class Child implements Parent
+class Child uses Parent
+ 
+4. How do you define a generic function in TypeScript?
+*
+0/1
+function identity<T>(arg: T): T
+function identity(type T
+function identity(arg: type T): T
+function identity<T>(arg: type T): T
+ 
+Correct answer
+function identity<T>(arg: T): T
+ 
+5. What is the primary purpose of using TypeScript in frontend development?
+*
+0/1
+To style components with CSS
+To provide static typing for JavaScript
+To optimize images for the web
+To manage server-side routing
+ 
+Correct answer
+To provide static typing for JavaScript
+API Interaction 
+4 of 5 points
+ 
+1. Which HTTP method is typically used to create a new resource in a REST API?
+*
+1/1
+GET
+- POST
+ 
+PUT
+DELETE
+ 
+2. What is a major advantage of using GraphQL over REST?
+*
+1/1
+Fixed endpoints
+- Strongly typed schema
+ 
+Server-side caching
+Stateless architecture
+ 
+3. Which protocol is used for real-time communication between a client and a server?
+*
+1/1
+HTTP
+FTP
+- WebSockets
+ 
+SMTP
+ 
+4. In the context of API interactions, what is the purpose of sending an API key in a request?
+*
+0/1
+To format the response in JSON
+ 
+To authenticate the request and authorize access
+To determine the HTTP method used
+To indicate the preferred language for the response
+Correct answer
+To authenticate the request and authorize access
+ 
+5.  In JavaScript, which of the following methods can be used to make an HTTP request to an API?
+*
+1/1
+- fetch()
+ 
+parse()
+submit()
+render()
+Architectural issues
+4 of 5 points
+ 
+1. Which of the following best describes the principle of "Separation of Concerns" in web development architecture?
+*
+1/1
+Using a single language for both front-end and back-end development.
+- Organizing code such that different concerns (e.g., UI, business logic, data access) are managed independently
+ 
+Minimizing the use of external libraries and frameworks.
+Ensuring that the front-end and back-end are hosted on different servers.
+ 
+2. What is a key architectural difference between a Single Page Application (SPA) and a Multi-Page Application (MPA)?
+*
+1/1
+- SPAs load all content initially, while MPAs request content from the server on each navigation.
+ 
+SPAs do not require a backend server, while MPAs do.
+SPAs are faster to develop than MPAs.
+MPAs use a REST API, while SPAs do not.
+ 
+3. Which of the following is a primary benefit of client-side rendering over server-side rendering?
+*
+1/1
+Faster initial page load times.
+Improved SEO capabilities.
+Reduced load on the client's device.
+- More dynamic and interactive user experience without full page reloads.
+ 
+ 
+4. How does a microservices architecture impact the front-end development of a web application?
+*
+1/1
+It requires all front-end logic to be written in JavaScript.
+- It simplifies the front-end by isolating different functionalities into separate, self-contained services.
+ 
+It mandates the use of a specific front-end framework like React or Angular.
+It allows for a monolithic front-end application to be built without concern for backend changes.
+ 
+5. Which of the following characteristics is NOT typically associated with Progressive Web Apps (PWAs)?
+*
+0/1
+They work offline using service workers.
+ 
+They are accessible through URLs and indexed by search engines.
+They require installation through app stores.
+They provide a native app-like experience in the browser.
+Correct answer
+They require installation through app stores.
+Technology framework
+1 of 5 points
+ 
+1. Which front-end framework is known for its component-based architecture and is widely used for building scalable single-page applications (SPAs)?
+*
+0/1
+Angular
+ 
+React
+Vue.js
+Ember.js
+Correct answer
+React
+ 
+2. Which front-end framework would be most suitable for a project requiring two-way data binding and a strong focus on MVVM (Model-View-ViewModel) architecture?
+*
+1/1
+React
+- Angular
+ 
+Svelte
+Backbone.js
+ 
+3. For a project where initial load time is critical, which front-end framework would be the best choice due to its smaller bundle size and high performance?
+*
+0/1
+Angular
+React
+Vue.js
+ 
+Svelte
+Correct answer
+Svelte
+ 
+4. Which front-end framework has the largest community and the most extensive ecosystem of libraries and tools?
+*
+0/1
+Angular
+ 
+React
+Vue.js
+Ember.js
+Correct answer
+React
+ 
+5. Which front-end framework is often recommended for beginners due to its simplicity and less steep learning curve?
+*
+0/1
+Angular
+ 
+React
+Vue.js
+Svelte
+Correct answer
+Vue.js
+GitHub Skills
+4 of 5 points
+ 
+1.  Which Git command is used to upload local repository content to a remote repository?
+*
+1/1
+- git push
+ 
+git pull
+git commit
+git add
+ 
+2. What does the following Git command do?  
+*
+1/1
+Captionless Image
+Creates a new repository
+Deletes the specified repository
+- Downloads a copy of the specified repository to your local machine
+ 
+Updates your local repository with changes from the remote repository
+ 
+3. Which command creates a new branch in Git?  
+*
+0/1
+git branch <branch-name>
+git checkout <branch-name>
+ 
+git merge <branch-name>
+git fetch <branch-name>
+Correct answer
+git branch <branch-name>
+ 
+4. What is the purpose of the following command?  
+*
+1/1
+Captionless Image
+Creates a new branch named feature-branch
+Deletes the branch named feature-branch
+- Merges the feature-branch into the current branch
+ 
+Switches to the feature-branch
+ 
+5.  You encounter a merge conflict after attempting to merge two branches. Which of the following steps is not part of the typical process to resolve this conflict?  
+*
+1/1
+Open the conflicted files and manually resolve the conflicts
+Stage the resolved files using git add
+Commit the changes with git commit
+- Run git reset --hard to discard all changes
+ 
+Swagger
+4 of 5 points
+ 
+1.  What is the primary purpose of integrating Swagger into a Node.js application?
+*
+1/1
+To handle database migrations
+To create a user authentication system
+- To automatically generate API documentation
+ 
+To manage application configuration
+ 
+2. Which npm command is used to install Swagger UI Express in a Node.js project?  
+*
+1/1
+npm install swagger-node
+- npm install swagger-ui-express
+ 
+npm install swagger-generator
+npm install swagger
+ 
+3.  Given the following code snippet, what does this configuration accomplish?
+*
+1/1
+Captionless Image
+It sets up a database connection for the Library API.
+It creates a new route for the Library API.
+- It sets up API documentation accessible at /api-docs.
+ 
+It initializes a new Express application.
+ 
+4.  How would you annotate the following Node.js route to include it in the Swagger documentation?
+*
+0/1
+Captionless Image
+
+A
+
+B
+
+C
+ 
+
+D
+Correct answer
+A
+ 
+5. What middleware function is used to serve Swagger documentation in a Node.js application?
+*
+1/1
+app.use('/docs', swaggerUi.serve);
+- app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerJsDoc(swaggerOptions)));
+ 
+app.use('/api', swaggerUi.serve, swaggerUi.setup);
+app.use('/swagger', swaggerUi.docs, swaggerJsDoc(swaggerOptions));
+Authentication
+4 of 5 points
+ 
+1. Which of the following is a commonly used middleware for handling authentication in a Node.js application?
+*
+1/1
+Express
+Mongoose
+- Passport.js
+ 
+Nodemon
+ 
+2.  In a JWT (JSON Web Token) authentication system, what is the primary purpose of the token?
+*
+1/1
+To encrypt user data
+To store user preferences
+- To securely transmit information between parties
+ 
+To serve as a session cookie
+ 
+3. Given the following code snippet, what is the purpose of the secret parameter in the jwt.sign method?  
+*
+1/1
+Captionless Image
+To specify the expiration time of the token
+To encrypt the token
+- To sign the token and ensure its integrity
+ 
+To store the user's password
+ 
+4.  Which of the following is NOT a recommended method for storing user passwords in a Node.js application?
+*
+1/1
+- Storing passwords in plain text
+ 
+Hashing passwords using bcrypt
+Using a salt when hashing passwords
+Storing hashed passwords in the database
+ 
+5. Consider the following code snippet using Passport.js for local authentication. What is the role of the done callback function?  
+*
+passport.use(new LocalStrategy(
+  function(username, password, done) {
+    User.findOne({ username: username }, function (err, user) {
+      if (err) { return done(err); }
+      if (!user) { return done(null, false, { message: 'Incorrect username.' }); }
+      if (!user.validPassword(password)) { return done(null, false, { message: 'Incorrect password.' }); }
+      return done(null, user);
+    });
+  }
+));
+0/1
+To authenticate the user
+ 
+To hash the user's password
+To store the user in the session
+To signal the completion of the authentication process
+Correct answer
+To signal the completion of the authentication process
+Web Server
+5 of 5 points
+ 
+1. Which of the following is NOT a HTTP request method?
+*
+1/1
+GET
+POST
+- FETCH
+ 
+DELETE
+ 
+2. What is the primary purpose of using middleware in an Express.js application?
+*
+1/1
+To handle database operations
+To define the API endpoints
+- To process requests before they reach the route handler
+ 
+To render HTML templates
+ 
+3. Given the following Node.js Express code snippet, what will be the output when accessing http://localhost:3000/?  
+*
+1/1
+Captionless Image
+An error message
+- "Server is running on port 3000" in the console and "Hello World!" in the browser
+ 
+"Hello World!" in the console and the browser
+"Server is running on port 3000" in the browser and "Hello World!" in the console
+ 
+4. Which of the following is a valid way to define a route in a Flask application to handle HTTP POST requests?
+*
+1/1
+@app.route('/submit', methods=['GET'])
+- @app.route('/submit', methods=['POST'])
+ 
+@app.route('/submit', methods=['PUT'])
+@app.route('/submit', methods=['DELETE'])
+ 
+5. In the context of a Django application, what does the following code do?
+*
+1/1
+Captionless Image
+It sets up a database model for polls
+- It handles a request and returns a response containing "Hello, world. You're at the polls index."
+ 
+It defines a URL pattern for the polls application
+It configures the settings for the Django project
+  Node.js CRUD API  
+2 of 5 points
+ 
+1. What is the correct way to set up a basic Express server in Node.js?
+*
+1/1
+Captionless Image
+Replace const express = require('express'); with import express from 'express';
+Replace app.listen(3000, () => { with app.listen(3000, function() {
+Replace app.get('/', (req, res) => { with app.get('/', function(req, res) {
+- All of the above
+ 
+ 
+2. What will the following code snippet do in a Node.js application using Express?
+*
+0/1
+Captionless Image
+It will read data from the request body and send a response with status 201
+It will create a new item in the database
+ 
+It will send a response with 'Item created'
+All of the above
+Correct answer
+All of the above
+ 
+3. Which of the following correctly describes the purpose of middleware in an Express application?
+*
+1/1
+Middleware is used to handle HTTP requests
+Middleware functions can execute any code, make changes to the request and response objects, end the request-response cycle, and call the next middleware function
+Middleware functions are executed sequentially, one after another
+- All of the above
+ 
+ 
+4. Consider the following code snippet. What will be the result of calling the /update/:id endpoint?  
+*
+0/1
+Captionless Image
+It will update the item in the database with the given id
+ 
+It will read the updated data from the request body
+It will send a response indicating the item with the given id has been updated
+All of the above
+Correct answer
+- All of the above
+ 
+5. What will the following code snippet do in a Node.js application using Express?
+*
+0/1
+Captionless Image
+It will delete the item with the given id from the database
+ 
+It will read the id from the request parameters
+It will send a response indicating the item with the given id has been deleted
+All of the above
+Correct answer
+All of the above
+Linux
+3 of 5 points
+ 
+1. What is the correct command to change the owner of a file named example.txt to a user named john?  
+*
+0/1
+chmod john example.txt
+ 
+chown john example.txt
+chgrp john example.txt
+changeown john example.txt
+Correct answer
+chown john example.txt
+ 
+2. Which command is used to list all currently running processes in a detailed format on Linux?
+*
+1/1
+ls -la
+top
+- ps aux
+ 
+kill -l
+ 
+3. What command would you use to check the open ports on a Linux system?
+*
+0/1
+netstat -tuln
+ifconfig
+ping
+ 
+nslookup
+Correct answer
+netstat -tuln
+ 
+4. Which command is used to install a package on a Debian-based system?
+*
+1/1
+yum install package_name
+- apt-get install package_name
+ 
+rpm -i package_name
+pkgadd package_name
+ 
+5. What will be the output of the following shell script?
+*
+1/1
+Captionless Image
+- Var1 is less than Var2
+ 
+Var1 is not less than Var2
+Syntax error
+No output
+Performance Tuning
+5 of 5 points
+ 
+1. Which of the following techniques is commonly used to reduce the response time of a backend API?
+*
+1/1
+Increasing the number of synchronous calls
+- Implementing caching mechanisms
+ 
+Reducing server hardware specifications
+Using a single-threaded architecture
+ 
+2. When optimizing a database query, which of the following is a best practice?
+*
+1/1
+Avoid using indexes to reduce overhead
+Use SELECT * to retrieve all columns
+- Use JOINs judiciously and only when necessary
+ 
+Write queries without considering the execution plan
+ 
+3. Which of the following is the main advantage of using a Content Delivery Network (CDN) in backend systems?
+*
+1/1
+Reduced server hardware costs
+Improved data consistency across regions
+Increased security of the backend system
+- Reduced latency and faster content delivery
+ 
+ 
+4. Which of the following statements about database indexing is true?
+*
+1/1
+Indexes always speed up write operations
+Indexes can slow down read operations
+- Indexes help in speeding up search queries
+ 
+Indexes should be used for every column in a table
+ 
+5. To improve the performance of an API, which of the following practices should be avoided?
+*
+1/1
+Implementing rate limiting
+Using bulk operations instead of multiple single operations
+- Sending large payloads with unnecessary data
+ 
+Using asynchronous processing
+RESTful APIs
+5 of 5 points
+ 
+1. You are developing a RESTful API in Node.js using Express. Which HTTP status code should you return for a successful creation of a new resource?
+*
+1/1
+200 OK
+- 201 Created
+ 
+400 Bad Request
+404 Not Found
+ 
+2. Consider the following Express route for updating a resource:  What is the purpose of { new: true } in the findByIdAndUpdate method?  
+*
+app.put('/api/items/:id', async (req, res) => {
+    try {
+        const item = await Item.findByIdAndUpdate(req.params.id, req.body, { new: true });
+        if (!item) {
+            return res.status(404).send('Item not found');
+        }
+        res.send(item);
+    } catch (error) {
+        res.status(500).send(error);
+    }
+});
+1/1
+It ensures that the method returns the original document.
+- It ensures that the method returns the updated document.
+ 
+It sets a default value for the document.
+It prevents the update if the document does not exist.
+ 
+3. Which middleware is commonly used in Express to parse incoming request bodies in a middleware before your handlers, available under the req.body property?  
+*
+1/1
+express-parser
+- body-parser
+ 
+json-parser
+request-parser
+ 
+4. Given the following Express route for deleting a resource: What would be the response if the item with the specified ID does not exist?
+*
+1/1
+Captionless Image
+200 OK
+201 Created
+400 Bad Request
+- 404 Not Found
+ 
+ 
+5. You have an Express application with the following routes:  Which of the following statements is true?
+*
+1/1
+Captionless Image
+- The GET route is used to retrieve all users.
+ 
+The POST route is used to update an existing user.
+The PUT route is used to delete a user by ID.
+The DELETE route is used to create a new user.
+Docker
+3 of 5 points
+ 
+1. What is the primary purpose of Docker in software development?
+*
+0/1
+To manage the development lifecycle of an application.
+ 
+To create isolated environments for running applications.
+To provide a version control system for source code.
+To optimize database queries.
+Correct answer
+To create isolated environments for running applications.
+ 
+2. Given the following Dockerfile, what will be the base image for the Docker container?  
+*
+1/1
+Captionless Image
+- node:14
+ 
+node:latest
+ubuntu:14
+node:app
+ 
+3. Which Docker command is used to list all the networks available on the Docker host?
+*
+1/1
+- docker network ls
+ 
+docker network inspect
+docker network create
+docker network rm
+ 
+4. Given the following docker-compose.yml file, what will be the name of the service that runs the database?  
+*
+0/1
+Captionless Image
+web
+db
+postgres
+ 
+my-web-app
+Correct answer
+db
+ 
+5. What is the purpose of using a volume in Docker?
+*
+1/1
+To increase the security of the container.
+- To persist data generated by and used by Docker containers.
+ 
+To reduce the size of Docker images.
+To improve the performance of Docker containers.
+Data Structures
+4 of 5 points
+ 
+1. Which data structure is best suited for implementing a LIFO (Last In First Out) behavior?
+*
+1/1
+Queue
+- Stack
+ 
+Linked List
+Binary Tree
+ 
+2. Which of the following operations is typically the most efficient on a hash table?
+*
+1/1
+Insertion
+Deletion
+Searching
+- All of the above
+ 
+ 
+3. What is the time complexity of searching for an element in a balanced binary search tree (BST)?
+*
+1/1
+O(1)
+- O(log n)
+ 
+O(n)
+O(n log n)
+ 
+4. In which data structure are elements added and removed from opposite ends, following a FIFO (First In First Out) principle?
+*
+1/1
+Stack
+- Queue
+ 
+Heap
+Deque
+ 
+5. Which data structure is used to implement depth-first search (DFS) in a graph?
+*
+0/1
+Queue
+Stack
+Priority Queue
+ 
+Hash Table
+Correct answer
+Stack
+Database Normalization
+4 of 5 points
+ 
+1. What is the main purpose of database normalization?
+*
+1/1
+To ensure database redundancy
+- To remove anomalies and redundancy in data
+ 
+To create more tables in the database
+To enhance data encryption
+ 
+2. Which of the following normal forms is achieved when a table is in First Normal Form (1NF) and all non-key attributes are fully functional dependent on the primary key?
+*
+1/1
+First Normal Form (1NF)
+- Second Normal Form (2NF)
+ 
+Third Normal Form (3NF)
+Boyce-Codd Normal Form (BCNF)
+ 
+3. Which condition is required for a table to be in Third Normal Form (3NF)?
+*
+0/1
+It should be in 1NF and 2NF, and all non-key attributes must be independent of the primary key.
+ 
+It should be in 2NF and all non-key attributes must be transitively dependent on the primary key.
+It should be in 2NF and all non-key attributes must be directly dependent on the primary key.
+It should be in 1NF and all non-key attributes must be transitively dependent on the primary key.
+Correct answer
+It should be in 2NF and all non-key attributes must be directly dependent on the primary key.
+ 
+4. Which of the following statements is true about Boyce-Codd Normal Form (BCNF)?
+*
+1/1
+- A table is in BCNF if it is in 3NF and every determinant is a candidate key.
+ 
+A table is in BCNF if it is in 2NF and every non-key attribute is dependent on the primary key.
+A table is in BCNF if it is in 3NF and every non-key attribute is fully functional dependent on the primary key.
+A table is in BCNF if it is in 2NF and every determinant is a candidate key.
+ 
+5. What type of anomaly does database normalization primarily aim to prevent?
+*
+1/1
+- Insert, Update, and Delete anomalies
+ 
+Indexing anomalies
+Query performance anomalies
+Network anomalies
+This content is neither created nor endorsed by Google. Report Abuse - Terms of Service - Privacy Policy
+Google Forms
